@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<title>Приветствие</title>
+<link href="styles.css" rel="stylesheet" />
+
+</head>
+<body>
+    
+<h1 id="output">Site</h1>
+      <main>
+        <div class="item-a">
+          <img src="img/1.jpg">
+        </div>
+        <div>
+          <img src="img/2.jpg">
+        </div>
+        <div class="item-b">
+          <img src="img/3.jpg">
+        </div>
+        <div>
+          <img src="img/4.jpg">
+        </div>
+        <div class="item-c">
+          <img src="img/5.jpg">
+        </div>
+        <div>
+          <img src="img/6.jpg">
+        </div>
+        <div>
+          <img src="img/7.jpg">
+        </div>
+        <div class="item-d">
+          <img src="img/8.jpg">
+        </div>
+        </main>
+        <script>
+      
+       let anna1 = prompt("Name site");
+          // Перевіряємо, чи користувач ввів текст (а не натиснув «Скасувати» або залишив поле порожнім)
+            if (anna1 !== null && anna1.trim() !== "") {
+              // Виводимо введений текст на сторінку
+              document.getElementById("output").textContent = anna1;
+          } 
+          else {
+              document.getElementById("output").textContent = "Ви не ввели текст!";
+          }
+      </script>
+</body>
+</html>
